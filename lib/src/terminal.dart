@@ -2,14 +2,14 @@ import 'dart:io';
 import 'option.dart';
 
 class Terminal {
+  // const cosntructor
+  const Terminal();
+
   void printPrompt(String prompt) {
     stdout.writeln(prompt);
   }
 
   void printOptions(List<Option> options) {
-    for (var i = 0; i < options.length; i++) {
-      stdout.writeln('[$i] - ${options[i].label}');
-    }
     // The map uses the indices of this list as keys and the corresponding objects as values
     options.asMap().forEach((index, option) {
       stdout.writeln('[$index] - ${option.label}');
