@@ -16,7 +16,7 @@ class Terminal {
     });
 
     stdout.writeln('Enter a choice');
-    stdout.write('>');
+    stdout.write('> ');
   }
 
   String collectInput() {

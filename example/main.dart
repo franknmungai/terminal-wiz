@@ -4,7 +4,7 @@ import 'package:terminal_wiz/src/option.dart';
 
 void main() {
   final prompter = new Prompter();
-  stdout.writeln("Terminal wiz");
+  stdout.writeln("Terminal Wiz");
 
   final options = [
     new Option(label: 'I want Red', value: '#FF1B2C'),
@@ -14,4 +14,7 @@ void main() {
   final resp = prompter.askMultiple('Choose a color', options);
 
   stdout.writeln(resp);
+
+  final resp2 = prompter.askBinary('Do you like Dart?');
+  stdout.writeln(resp2);
 }

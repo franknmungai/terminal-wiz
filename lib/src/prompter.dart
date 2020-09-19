@@ -5,11 +5,15 @@ import 'terminal.dart';
 final Terminal _terminal = const Terminal(); //_ makes a variable private
 
 class Prompter {
-  askMultiple(String prompt, List<Option> options) {
+  String _ask(String prompt, List<Option> options) {
+    _terminal.clear();
     _terminal.printPrompt(prompt);
     _terminal.printOptions(options);
+    return _terminal.collectInput();
+  }
 
-    final input = _terminal.collectInput();
+  askMultiple(String prompt, List<Option> options) {
+    final input = _ask(prompt, options);
 
     try {
       return options[int.parse(input)].value;
@@ -18,10 +22,8 @@ class Prompter {
     }
   }
 
-  askBinary(String prompt) {
-    _terminal.printPrompt('$prompt (Y/n)');
-
-    final input = _terminal.collectInput().toLowerCase();
+  bool askBinary(String prompt) {
+    final input = _ask('$prompt (Y/n)', []).toLowerCase();
     return input.contains('y');
   }
 }
