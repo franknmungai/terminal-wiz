@@ -1,0 +1,13 @@
+{
+  "configVersion": 2,
+  "packages": [
+    {
+      "name": "terminal_wiz",
+      "rootUri": "../",
+      "packageUri": "lib/"
+    }
+  ],
+  "generated": "2020-09-17T11:39:28.655282Z",
+  "generator": "pub",
+  "generatorVersion": "2.9.2"
+}
