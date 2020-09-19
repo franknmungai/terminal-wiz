@@ -1,5 +1,5 @@
 import 'dart:io';
-import 'package:terminal_wiz/terminal-wiz.dart';
+import 'package:terminal_wiz/terminal_wiz.dart';
 
 void main() {
   stdout.writeln("Terminal Wiz");

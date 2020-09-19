@@ -1,3 +1,6 @@
 name: terminal_wiz
 version: 1.0.0
-description: A module to create terminal wizards in Dart
+description: A Package to create terminal wizards in Dart
+homepage: https://frank-ng.netlify.app/
+environment:
+  sdk: <3.0.0
