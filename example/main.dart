@@ -6,7 +6,7 @@ import 'package:terminal_wiz/src/option.dart';
 void main() {
   var terminal = new Terminal();
   terminal.clear();
-  print("Terminal wiz");
+  stdout.writeln("Terminal wiz");
 
   var options = [
     new Option(label: 'I want Red', value: '#FF1B2C'),

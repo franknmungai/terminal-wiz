@@ -10,6 +10,10 @@ class Terminal {
     for (var i = 0; i < options.length; i++) {
       stdout.writeln('[$i] - ${options[i].label}');
     }
+    // The map uses the indices of this list as keys and the corresponding objects as values
+    options.asMap().forEach((index, option) {
+      stdout.writeln('[$index] - ${option.label}');
+    });
 
     stdout.writeln('Enter a choice');
     stdout.write('>');
