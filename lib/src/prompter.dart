@@ -1,7 +1,7 @@
 import 'option.dart';
 import 'terminal.dart';
 
-// creating a terminal woth the const keyword gives us the same oject when create several instances with the same types
+// creating a terminal with the const keyword gives us the same object when we create several instances with the same class
 final Terminal _terminal = const Terminal(); //_ makes a variable private
 
 class Prompter {
